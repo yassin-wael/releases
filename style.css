@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: century Gothic;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+section 
+{
+  position: relative;
+  widows: 100%;
+  background-image: url(wallhaven.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+}
+.nav
+{
+    float: right;
+  list-style-type: none;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+.sic li
+{
+  list-style: none;
+}
+.sic li a 
+{
+  text-decoration: none;
+  /*color: #999;
+  margin-right: 30px;
+  font-size: 0.9em;*/
+}
+/*.sic li a:hover
+{
+  color: #fff;
+  transition: 0.3s ease;
+}*/
+.sic li a img 
+{
+  transform: scale(0.5);
+  filter: invert(1);
+}
+.nav
+{
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+  display: flex;
+  animation: fade-in 0.5s ease-in forwards; 
+  animation-delay: 0s;
+  opacity: 0; 
+}
+.nav li
+{
+  list-style: none;
+}
+.nav li a 
+{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  margin: 4px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: 0.6s ease;
+}
+
+.nav a:hover
+{
+  background-color: #fff;
+  color: #000;
+}
+.nav .active a
+{
+  background-color: #fff;
+  color: #000;
+}
+
+.nav li a.active,
+.nav li a:hover
+{
+  transition: 0.3s ease;
+}
+
+
+@keyframes fade-in
+{
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+@keyframes left-in
+{
+  0%
+  {
+    transform: translate(-200px);
+    opacity: 0;
+  }
+  100%
+  {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+@media (max-width: 991px)
+{
+  .menuicon
+  {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    background: url(menu.png);
+    filter: invert(1);
+    background-size: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    z-index: 1000; 
+  }
+  .menuicon.active 
+  {
+    background: url(cls.png);
+    filter: invert(1);
+    background-size: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    z-index: 1000; 
+  }
+
+  .nav
+  {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0.0.0.95);
+    flex-direction: column;
+    z-index: 11;
+    border: none;
+    padding: 50px;
+  }
+  .nav.active
+  {
+    left: 0;
+  }
+  .nav li 
+  {
+    margin: 10px 0;
+  }
+  section 
+    {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    
+    .sic
+    {
+      left: 20px;
+      bottom: 8px;
+    }
+}.nav
+{
+    float: right;
+  list-style-type: none;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+.sic li
+{
+  list-style: none;
+}
+.sic li a 
+{
+  text-decoration: none;
+  /*color: #999;
+  margin-right: 30px;
+  font-size: 0.9em;*/
+}
+/*.sic li a:hover
+{
+  color: #fff;
+  transition: 0.3s ease;
+}*/
+.sic li a img 
+{
+  transform: scale(0.5);
+  filter: invert(1);
+}
+.nav
+{
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+  display: flex;
+  animation: fade-in 0.5s ease-in forwards; 
+  animation-delay: 0s;
+  opacity: 0; 
+}
+.nav li
+{
+  list-style: none;
+}
+.nav li a 
+{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  margin: 4px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: 0.6s ease;
+}
+
+.nav a:hover
+{
+  background-color: #fff;
+  color: #000;
+}
+.nav .active a
+{
+  background-color: #fff;
+  color: #000;
+}
+
+.nav li a.active,
+.nav li a:hover
+{
+  transition: 0.3s ease;
+}
+.nav li a.active,
+.nav li a:hover
+{
+  color: #347cff;
+  transition: 0.3s ease;
+}
+#footer {
+    background-color: black;
+    /*background-image: url(wallhaven.jpg);*/
+    padding: 40px;
+    opacity: 90%;
+    color: white;
+    border: 1px solid transparent;
+    text-align: left;
+    margin: auto;
+    user-select: none;
+}
+.footer
+{
+  float: right;
+  display: flex;
+  font-size: 15px;
+  word-break: break-all;
+}
+.footer li 
+{
+  list-style: none;
+  margin: 8px;
+  color: white;
+}
+.footer li a
+{
+  list-style: none;
+  margin: 5px;
+  color: white;
+}
+
+}
+@keyframes fade-in
+{
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+@keyframes left-in
+{
+  0%
+  {
+    transform: translate(-200px);
+    opacity: 0;
+  }
+  100%
+  {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+@media (max-width: 991px)
+{
+  .menuicon
+  {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    background: url(menu.png);
+    filter: invert(1);
+    background-size: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    z-index: 1000; 
+  }
+  .menuicon.active 
+  {
+    background: url(cls.png);
+    filter: invert(1);
+    background-size: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    z-index: 1000; 
+  }
+
+  .nav
+  {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0.0.0.95);
+    flex-direction: column;
+    z-index: 11;
+    border: none;
+    padding: 50px;
+  }
+  .nav.active
+  {
+    left: 0;
+  }
+  .nav
+  {
+    margin-top: 0;
+  }
+  .nav li 
+  {
+    margin: 10px 0;
+  }
+  section 
+    {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    
+    .sic
+    {
+      left: 20px;
+      bottom: 8px;
+    }
+    .footer li a {
+    text-align: left;
+    font-size: 10px;
+    margin: 2px;
+    }
+}
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color: white;
+  user-select: none;
+}
+.button {
+    /*position: absolute;*/
+    width: 150px;
+    margin: auto;
+}
+.btn
+{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+  transition: 0.4s ease;
+  display: block;
+  text-align: center;
+  margin: 5px;
+}
+.btn:hover
+{
+  background-color: black;
+  color: #fff;
+}
+h3{
+  text-align: center;
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  user-select: none;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  .menuicon
+  {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    background: url(menu.png);
+    filter: invert(1);
+    background-size: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    z-index: 1000; 
+  }
+  .menuicon.active 
+  {
+    background: url(cls.png);
+    filter: invert(1);
+    background-size: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    z-index: 1000; 
+  }
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
